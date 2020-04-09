@@ -1,0 +1,31 @@
+#bemvindos {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+#texto-secundario {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+#convite {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    background-color: #B4B64C;
+    color: white;
+    border-radius: 25px; 
+    width: 300px; 
+}
