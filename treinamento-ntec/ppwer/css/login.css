@@ -30,12 +30,12 @@ html {
 
 #texto-principal {
     
-    height: 52px;
-    top: 102px;
+    height: 3.25rem;
+    top: 3.675rem;
     font-style: normal;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    font-size: 56px;
+    font-size: 3.5rem;
     color: #FFFFFF;
 }
 
@@ -44,8 +44,8 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
-    line-height: 15px;
+    font-size: 1.063rem;
+    line-height: 0.938rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -57,11 +57,11 @@ html {
 #botao {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: #B4B64C;
     color: white;
-    border-radius: 25px; 
-    width: 152px; 
+    border-radius: 1.563rem; 
+    width:9.5rem; 
 }
 
 #botao-enviar {
@@ -69,8 +69,8 @@ html {
     font-weight: normal;
     background-color: #B4B64C; 
     color: white; 
-    border-radius: 25px; 
-    width: 100px;
+    border-radius: 1.563rem; 
+    width: 6.25rem;
     opacity: 100% !important;
 }
 
@@ -83,21 +83,21 @@ html {
 .forms {
     background-color: #72735C;
     opacity: 85%; 
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 #about-css {
     font-weight: normal; 
-    font-size: 15px;
+    font-size: 0.938rem;
     font-family: 'Montserrat', sans-serif;
     background-color: #B4B64C;
     color: white;
-    border-radius: 25px; 
-    width: 152px;
+    border-radius: 1.563rem; 
+    width: 9.5rem;
 }
 
 #textbox {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border-color: white;
     width: 100%;
     outline: none;
@@ -115,5 +115,5 @@ html {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 0.938rem;
 }
