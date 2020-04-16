@@ -153,3 +153,21 @@ html {
     position: absolute;
     z-index: -1;
 }
+
+.plano-2 {
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background: #72735C;
+    border-radius: 26px 26px 0px 0px;
+    
+    content: "";
+    opacity: 1;
+    top: 90px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
