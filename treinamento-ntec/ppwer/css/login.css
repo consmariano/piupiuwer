@@ -4,15 +4,14 @@ html {
     height: 100%;
 }
 
-/* main {
-    background-image: url(imagens/group-of-people.jpg); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-    height: 100%
-} */
+#navbar-itens {
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
 
 #plano {
+
     content: "";
     background-image: url("../imagens/plano-de-fundo.png");
     max-width: 100%;
@@ -35,7 +34,7 @@ html {
     font-style: normal;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #FFFFFF;
 }
 
@@ -116,4 +115,41 @@ html {
   position: relative;
   width: 100%;
   padding-left: 0.938rem;
+}
+
+.search-box {
+    background: #CB7341;
+    border-radius: 1.563rem;
+    width: 13rem;
+    height: 2rem; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+ 
+}
+
+#plano-2 {
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background: #72735C;
+    border-radius: 26px 26px 0px 0px;
+    
+    content: "";
+    opacity: 1;
+    top: 90px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
