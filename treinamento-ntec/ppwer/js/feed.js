@@ -1,7 +1,7 @@
 // Busca texto
-var textboxPiupeet = (document).getElementById("#validation");
+var textboxPiupeet = (document).getElementById("validation");
 
-var contador = (document).getElementById("#wordCount");
+var contador = (document).getElementById("wordCount");
 
 textboxPiupeet.addEventListener("keyup", counter);
 
