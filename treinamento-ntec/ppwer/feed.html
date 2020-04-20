@@ -35,20 +35,20 @@
         </nav>
         <section> <!--Criacao da sidebar -->
             <div class="sidebar container">
-                <div class="frases d-inline-flex">
+                <div class="d-inline-flex">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                     <a href="#">Frases</a>
-                    <a href="#">10000</a>
+                    <span id="frases" class="pt-2 pl-5" style="font-weight: bold;">1000</span>
                 </div>
-                <div class="seguidores d-inline-flex">
+                <div class="d-inline-flex">
                     <i class="fa fa-users" aria-hidden="true"></i>
                     <a href="#">Seguidores</a>
-                    <a href="#">10000</a>
+                    <span id="seguidores" class="pt-2 pl-2" style="font-weight: bold;">1000</span>
                 </div>
-                <div class="seguindo d-inline-flex">
+                <div class="d-inline-flex">
                     <i class="fa fa-heart" aria-hidden="true"></i>
                     <a href="#">Seguindo</a>
-                    <a href="#">10000</a>
+                    <span id="seguindo" class="pt-2 pl-4" style="font-weight: bold;">1000</span>
                 </div>
                 <div class="edit-perfil d-inline-flex">
                     <i class="fa fa-pencil-square" aria-hidden="true"></i>
@@ -56,20 +56,25 @@
                 </div>
             </div>
             <div id="plano-2"> <!-- para o piupeet com o icon e a caixa de texto -->
-                <!-- <div class="icon-shape"></div> -->
-                <div class="container">
-                    <form>
-                        <div class="container txtbox-shape">
-                            <div class="d-flex justify-content-center pt-4">
-                                <textarea id="validation" rows="2" class="form-control"></textarea>
-                                <span id="wordCount">0</span> /140
+                <div class="form-group">
+                    <!-- <div class="icon-shape"></div> -->
+                    <div class="container">
+                        <form>
+                            <div class="container txtbox-shape">
+                                <div class="d-flex justify-content-center pt-4">
+                                    <textarea id="textpiu" rows="2" class="form-control"></textarea>
+                                    <span id="wordCount">0</span> /140
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <input type="file" id="piu-file">
+                                    <button type="submit" id="piu-botao" class="btn btn-info">Piupeet</button>
+                                </div>
+                                <div id="piu-adicionado">
+                                    <textarea name="piu" id="piutext" cols="30" rows="10"></textarea>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-center">
-                                <!-- <input type="file" class="piupeet-file pl-5"> -->
-                                <button type="submit" class="piupeet btn btn-info">Piupeet</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
