@@ -17,10 +17,11 @@ function counter(characters) {
 
 
 //Início do envio do piupeet para o feed.
-var piu = document.querySelector("piuBotao");
+var piu = document.querySelector("#piu-botao");
+
 piu.addEventListener("click", enviaPiu);
 
-function enviaPiu() {
+function enviaPiu(e) {
 //passos: pegar os dados da tag com o querySelector OK
 //adiciona .eventListener OK
 //para adicionar um novo tweet: 
@@ -34,16 +35,22 @@ function enviaPiu() {
 //piuBox.appendChild(usuario);
 //colocar isso dentro da tag maior que possui o feed com .appendChild também.
 
+    e.preventDefault()
+
     var piuTexto = document.querySelector("#textpiu");
     //var piuImagem = document.querySelector("");
     //var piuUsuario = document.querySelector("");
     
     var piutexto2 = piuTexto.value;
 
-    var criarPiu = document.createElement("div");
+    var umNovoPiu = document.createElement("div");
+    var umNovoTextoDePiu = document.createElement("p");
+    umNovoTextoDePiu.innerText = piutexto2
 
-    criarPiu.classList.add();
-    criarPiu.textContent = piutexto2;
+    document.querySelector(".caixa-de-pius").appendChild(umNovoPiu)
+    umNovoPiu.appendChild(umNovoTextoDePiu)
+
+    umNovoPiu.classList.add("um-piu");
 
 }
 //Fim do envio do piupeet.
