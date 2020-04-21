@@ -1,5 +1,6 @@
 var botaoCarregarMais = document.querySelector("#carregar-mais");
 
+//Função para criar os pius de registro.
 function adicionaPiu(x) {
     var nome = document.querySelector(".nome-registro");
 
@@ -46,7 +47,10 @@ function adicionaPiu(x) {
     var caixaDeRegistro = document.querySelector(".caixa-de-registros")
     caixaDeRegistro.appendChild(umNovoRegistro)
 }
+//Fim da criação da estrutura dos pius de registro. 
 
+
+//Puxar registros do servidor. 
 botaoCarregarMais.addEventListener("click", function() {
     var xhr = new XMLHttpRequest();
 

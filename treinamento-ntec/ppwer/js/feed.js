@@ -4,7 +4,6 @@ var textboxPiupeet = document.getElementById("textpiu");
 var contador = document.getElementById("wordCount"); 
 textboxPiupeet.addEventListener("keyup", counter); //escutador de evento para quando o usário digitar no textarea.
 
-// document.querySelector("#piu-botao").disabled = true;
 function counter(characters) {
     var characters = textboxPiupeet.value.split(''); //lista contendo todos os characters digitados pelo usuário.
     contador.innerText = characters.length;
@@ -34,7 +33,6 @@ function counter(characters) {
 //Fim do JS para contar e limitar o número de caracteres.
 
 //Desativar botão para quando o conteúdo for vazio. 
-
 var conteudoPiu = document.querySelector("#textpiu");
 var conteudoPiu2 = conteudoPiu.textContent;
 
