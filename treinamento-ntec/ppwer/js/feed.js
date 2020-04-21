@@ -4,6 +4,7 @@ var textboxPiupeet = document.getElementById("textpiu");
 var contador = document.getElementById("wordCount"); 
 textboxPiupeet.addEventListener("keyup", counter); //escutador de evento para quando o usário digitar no textarea.
 
+// document.querySelector("#piu-botao").disabled = true;
 function counter(characters) {
     var characters = textboxPiupeet.value.split(''); //lista contendo todos os characters digitados pelo usuário.
     contador.innerText = characters.length;
@@ -32,18 +33,15 @@ function counter(characters) {
 }
 //Fim do JS para contar e limitar o número de caracteres.
 
-// location.reload();
-
 //Desativar botão para quando o conteúdo for vazio. 
-function desativarBotao(conteudoPiu) {
-    var conteudoPiu = document.querySelector("#textpiu");
-    var conteudoPiu2 = conteudoPiu.textContent;
 
-    if (conteudoPiu2 == "") {
-        document.querySelector("#piu-botao").disabled = true; 
-    }
+var conteudoPiu = document.querySelector("#textpiu");
+var conteudoPiu2 = conteudoPiu.textContent;
+
+if (conteudoPiu2.length == 0) {
+    document.querySelector("#piu-botao").disabled = true; 
 }
-//----------------------------------------
+
 
 //Início do envio do piupeet para o feed.
 var piu = document.querySelector("#piu-botao");
@@ -95,7 +93,6 @@ function enviaPiu(e) {
     
     var caixaDePius = document.querySelector(".caixa-de-pius");
     caixaDePius.appendChild(umNovoPiu)
-
     
 }
 //Fim do envio do piupeet.

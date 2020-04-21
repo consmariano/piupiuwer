@@ -89,7 +89,6 @@
 }
 
 #piu-botao {
-    
     background-color: #CB7341;
     border-color: #CB7341;
     color: black;
@@ -98,11 +97,28 @@
     height: 30px;
     font-weight: normal;
     border-radius: 20px; 
-    /* right: 20%;  */
-    top: 70%
+}
+
+#carregar-mais {
+
+    background-color: #CB7341;
+    border-color: #CB7341;
+    color: black;
+    font-weight: normal;
+    border-radius: 20px; 
 }
 
 .caixa-de-pius {
+    background-color: #B4B64C;
+    position: relative;
+    
+    left: 30%; 
+    width: 40%; 
+    height: 25%;
+    border-radius: 5px;
+}
+
+.caixa-de-registros {
     background-color: #B4B64C;
     position: relative;
     
@@ -122,9 +138,7 @@
     top: 50%;
     object-fit: cover;
 }
-.um-piu {
 
-}
 
 .aviso-do-limite {
     font-family: 'Montserrat', sans-serif;
