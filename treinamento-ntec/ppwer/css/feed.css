@@ -54,8 +54,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
     z-index: -1;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
 }
 
 .icon-shape {
@@ -66,13 +67,12 @@
     border-radius: 3.75rem;
     float: left;
     top: 50%;
-    left: 15%;
-    opacity: 80%;
+    left: 22%;
+    object-fit: cover;
 }
 
 .txtbox-shape {
     background-color: #B4B64C;
-    position: absolute;
     display: block;
     border-radius: 5px;
     width: 40%;
@@ -89,8 +89,7 @@
 }
 
 #piu-botao {
-    position: absolute;
-
+    
     background-color: #CB7341;
     border-color: #CB7341;
     color: black;
@@ -103,11 +102,35 @@
     top: 70%
 }
 
-/* .textbox-piupeet {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 37.5rem;
-    top: 10%;
-    left: 9%;
-} */
+.caixa-de-pius {
+    background-color: #B4B64C;
+    position: relative;
+    
+    left: 30%; 
+    width: 40%; 
+    height: 25%;
+    border-radius: 5px;
+}
+
+.icon-piu {
+    position: relative;
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    float: left;
+    top: 50%;
+    object-fit: cover;
+}
+.um-piu {
+
+}
+
+.aviso-do-limite {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    opacity: 80%;
+    text-align: center;
+}
