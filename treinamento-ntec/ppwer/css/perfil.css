@@ -1,0 +1,99 @@
+.editar-perfil-shape {
+
+    width: 300px;
+    height: 250px;
+    background-color: #B4B64C;
+    display: block;
+    border-radius: 5px;
+}
+
+.icon-shape {
+    background-color: white;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 3.75rem;
+    object-fit: cover;
+}
+
+#formulario {
+    border-radius: 1rem;
+    text-align: center;
+    outline: none;
+    background: none;
+    background-color: white;
+    color: black;
+    border: none;
+    width: 390px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-form {
+    background-color: #B4B64C;
+    border-radius: 1rem;
+}
+
+.titulo-perfil {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.tira {
+    text-align: start;
+    background-color: #6DA05C; 
+    font-weight: bold;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.botao-carregar {
+    background-color: #CB7341;
+    border-radius: 1rem;
+    border: none;
+}
+
+.coluna-usuario {
+    background-color: #B4B64C; 
+    border-radius: 26px 0px 0px 0px;
+    background-color: #B4B64C; border-radius: 26px 0px 0px 0px;
+    padding-bottom: 10rem;
+}
+
+.icon-shape-perfil {
+    position: relative;
+    background-color: white;
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 5.75rem;
+    float: left;
+    top: 50%;
+    left: 22%;
+    object-fit: cover;
+}
+
+.fileira-usuario {
+    background-color: #F2F491; 
+}
+
+.txtbox-shape-perfil {
+    background-color: #B4B64C;
+    display: block;
+    border-radius: 5px;
+    width: 60%;
+    height: 40%;
+}
+
+
+.caixa-de-pius {
+    background-color: #B4B64C;
+    position: relative;
+    
+    left: 30%; 
+    width: 40%; 
+    height: 25%;
+}

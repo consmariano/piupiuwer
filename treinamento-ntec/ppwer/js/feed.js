@@ -91,6 +91,6 @@ function enviaPiu(e) {
     
     var caixaDePius = document.querySelector(".caixa-de-pius");
     caixaDePius.appendChild(umNovoPiu)
-    
+
 }
 //Fim do envio do piupeet.

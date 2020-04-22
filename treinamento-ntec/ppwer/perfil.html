@@ -8,10 +8,11 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="css/login.css" rel="stylesheet" type="text/css">
         <link href="css/feed.css" rel="stylesheet" type="text/css">
+        <link href="css/perfil.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,700;1,600&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="imagens/android-chrome-256x256.png">
-        <!-- Fonte de icons. --><script src="https://kit.fontawesome.com/yourcode.js"></script>
+        <!-- Fonte de icons. --> <script src="https://kit.fontawesome.com/yourcode.js"></script>
     </head>
 
     <body style="background-color: #F2F491 !important;">
@@ -33,40 +34,53 @@
                 </ul> 
             </div>
         </nav>
-        <section> <!--Criacao da sidebar -->
-            <div class="sidebar container">
-                <div class="d-inline-flex">
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <a href="#">Frases</a>
-                    <span id="frases" class="pt-2 pl-5" style="font-weight: bold;">1000</span>
-                </div>
-                <div class="d-inline-flex">
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                    <a href="#">Seguidores</a>
-                    <span id="seguidores" class="pt-2 pl-2" style="font-weight: bold;">1000</span>
-                </div>
-                <div class="d-inline-flex">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <a href="#">Seguindo</a>
-                    <span id="seguindo" class="pt-2 pl-4" style="font-weight: bold;">1000</span>
-                </div>
-                <div class="edit-perfil d-inline-flex">
-                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
-                    <a href="#">Editar Perfil</a>
-                </div>
-            </div>
-            <div id="plano-2"> <!-- para o piupeet com o icon e a caixa de texto -->
-                <div class="form-group">
-                    <img src="imagens/pp.jpg" alt="" class="icon-shape">
-                    <div class="aviso-do-limite mt-0">
-                        <p></p>
+        <section>
+            <div id="plano-2">
+                <div class="row">
+                    <div class="pt-5 mt-n5 coluna-usuario col-4">
+                        <div class="ml-5">
+                            <img src="imagens/pp.jpg" alt="" class="icon-shape-perfil">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="pt-5">
+                            <p style="font-size: 27px; text-align: center;">Constanza Maria</p>
+                            <p class="mt-n3" style="font-size: 20px; text-align: center;">@consmariano</p>
+                            <p class="mt-n3" style="text-align: center;">20 anos</p>
+                            <p style="text-align: center;">Hellohellohello.</p>
+                        </div>
+                        <div class="fileira-usuario container d-inline-flex pt-3 mt-3">
+                            <i class="fa fa-users mr-2 mt-1" aria-hidden="true"></i>
+                            <p class="pr-3" style="font-weight: bold;">Seguidores</p>
+                            <span>0</span>
+                        </div>
+                        <div class="fileira-usuario container d-inline-flex pt-4 mt-3">
+                            <i class="fa fa-heart mr-2 mt-1" aria-hidden="true"></i>
+                            <p class="pr-3" style="font-weight: bold;">Seguindo</p>
+                            <span>0</span>
+                        </div>
+                        <div class="fileira-usuario container d-inline-flex pt-4 mt-3">
+                            <i class="fa fa-quote-left mr-2 mt-1" aria-hidden="true"></i>
+                            <p class="pr-3" style="font-weight: bold;">Frases</p>
+                            <span>0</span>
+                        </div>
+                        <a href="editar-perfil.html">
+                            <div class="fileira-usuario container d-inline-flex pt-4 mt-3">
+                                <i class="fa fa-eye mr-2 mt-1" aria-hidden="true"></i>
+                                <p class="pr-3" style="font-weight: bold;">Editar perfil</p>
+                            </div>
+                    </a>
                     </div>
-                    <div class="container">
+                    <div class="col-8">
                         <form>
-                            <div class="container txtbox-shape mt-5 pb-3">
-                                <div class="d-flex flex-wrap justify-content-start">
-                                    <p id="name-usuario">Constanza Maria |</p>
-                                    <p class="ml-2" id="nome-de-usuario">@username</p>
+                            <div class="container txtbox-shape-perfil pb-3 ml-5">
+                                <div class="d-flex flex-wrap">
+                                    <p id="name-usuario"></p>
+                                    <p class="ml-2" id="nome-de-usuario"></p>
                                 </div>
                                 <div class="d-flex flex-wrap justify-content-end">
                                     <textarea id="textpiu" rows="2" class="form-control"></textarea>
@@ -85,37 +99,27 @@
                         <div>
                             <p></p>
                         </div>
-                        <div class="caixa-de-pius">
-                            <div class="d-flex flex-column um-piu">
-                                <div class="d-flex flex-wrap justify-content-start">
-                                    <img src="imagens/pp.jpg" class="icon-piu mt-2 ml-3">
-                                    <p class="ml-3 mt-2">Constanza Maria |</p>
-                                    <p class="nome-de-usuario mt-2 ml-1">@username</p>
+                        <div class="container">
+                            <div class="caixa-de-pius ml-5" style="left: 0; width: 60%;">
+                                <div class="d-flex flex-column um-piu">
+                                    <div class="d-flex flex-wrap justify-content-start">
+                                        <img src="imagens/pp.jpg" class="icon-piu mt-2 ml-3">
+                                        <p class="ml-3 mt-2">Constanza Maria |</p>
+                                        <p class="nome-de-usuario mt-2 ml-1">@username</p>
+                                    </div>
+                                    <p class="mt-2 ml-2">Hello, world.</p>
                                 </div>
-                                <p class="mt-2 ml-2">Hello, world.</p>
                             </div>
                         </div>
                         <div>
                             <p></p>
                         </div>
-                        <div class="caixa-de-registros">
-                            <div class="d-flex flex-column um-piu">
-                                <div class="d-flex flex-wrap justify-content-start">
-                                    <img src="imagens/pp.jpg" class="imagem-registro icon-piu mt-2 ml-3">
-                                    <p class="nome-registro ml-3 mt-2">Constanza Maria | </p>
-                                    <p class="usuario-registro mt-2 ml-1">@constanza</p>
-                                </div>
-                                <p class="mensagem-registro mt-2 ml-2">Vai no Carregar Mais pra ver o time mais lindo.</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            <div class="d-flex justify-content-center">
-                <button id="carregar-mais">Carregar Mais</button>
-            </div>
+
             </div>
         </section>
-
+        
 
         <!-- <footer>
             Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
