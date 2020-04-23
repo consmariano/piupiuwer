@@ -83,6 +83,14 @@ function enviaPiu(e) {
     novoUsuario.classList.add("ml-1");
     piuwerInfo.appendChild(novoUsuario);
 
+    // var novaLinha = document.createElement("p");
+    // novaLinha.classList.add("line");
+    // piuwerInfo.appendChild(novaLinha);
+
+    // var novoIcons = createElement("div");
+    // novoIcons.classList.add("d-inline-flex");
+    // novoIcons.classList.add("pb-2");
+
     var umNovoTextoDePiu = document.createElement("p");
     umNovoTextoDePiu.innerText = piutexto2;
     umNovoPiu.appendChild(piuwerInfo)
@@ -91,6 +99,9 @@ function enviaPiu(e) {
     
     var caixaDePius = document.querySelector(".caixa-de-pius");
     caixaDePius.appendChild(umNovoPiu)
-
 }
 //Fim do envio do piupeet.
+
+function deletar(umNovoPiu) {
+
+}

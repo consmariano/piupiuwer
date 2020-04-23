@@ -15,8 +15,8 @@
     </head>
 
     <body style="background-color: #F2F491 !important;">
-        <nav class="navbar navbar-expand-lg" style="width: 85rem;">
-            <a class="navbar-brand" href="index.html"><img style="height: 3.75rem; width: 12.5rem;" src="imagens/logo-feed.png" alt="PiuPiuwer">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="perfil.html"><img style="height: 3.75rem; width: 12.5rem;" src="imagens/logo-feed.png" alt="PiuPiuwer">
             </a>
             <div class="container justify-content-end">
                 <ul class="navbar-nav">
@@ -34,28 +34,32 @@
             </div>
         </nav>
         <section> <!--Criacao da sidebar -->
-            <div class="sidebar container">
-                <div class="d-inline-flex">
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <a href="#">Frases</a>
-                    <span id="frases" class="pt-2 pl-5" style="font-weight: bold;">1000</span>
+            <div id="plano-2"> 
+                <div class="container d-flex justify-content-end mr-4 mt-n5">
+                    <div class="col-2">
+                        <div class="container justify-content-end sidebar mt-n5 pt-2" style="background-color: #B4B64C; border-radius: 10px; color: black">
+                            <div class="container d-inline-flex">
+                                <i class="fa fa-quote-left mt-2" aria-hidden="true"></i>
+                                <a href="#">Pius</a>
+                                <span id="frases" class="pt-2 pl-5 ml-3" style="font-weight: bold;">2</span>
+                            </div>
+                            <div class="container d-inline-flex">
+                                <i class="fa fa-users mt-2" aria-hidden="true"></i>
+                                <a href="#">Seguidores</a>
+                                <span id="seguidores" class="pt-2 pl-2" style="font-weight: bold;">0</span>
+                            </div>
+                            <div class="container d-inline-flex">
+                                <i class="fa fa-heart mt-2" aria-hidden="true"></i>
+                                <a href="#">Seguindo</a>
+                                <span id="seguindo" class="pt-2 pl-4" style="font-weight: bold;">0</span>
+                            </div>
+                            <div class="container edit-perfil d-inline-flex">
+                                <i class="fa fa-pencil-square mt-2" aria-hidden="true"></i>
+                                <a href="#">Editar Perfil</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-inline-flex">
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                    <a href="#">Seguidores</a>
-                    <span id="seguidores" class="pt-2 pl-2" style="font-weight: bold;">1000</span>
-                </div>
-                <div class="d-inline-flex">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <a href="#">Seguindo</a>
-                    <span id="seguindo" class="pt-2 pl-4" style="font-weight: bold;">1000</span>
-                </div>
-                <div class="edit-perfil d-inline-flex">
-                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
-                    <a href="#">Editar Perfil</a>
-                </div>
-            </div>
-            <div id="plano-2"> <!-- para o piupeet com o icon e a caixa de texto -->
                 <div class="form-group">
                     <img src="imagens/pp.jpg" alt="" class="icon-shape">
                     <div class="aviso-do-limite mt-0">
@@ -93,6 +97,16 @@
                                     <p class="nome-de-usuario mt-2 ml-1">@username</p>
                                 </div>
                                 <p class="mt-2 ml-2">Hello, world.</p>
+                                <div class="line mt-5 ml-1"></div>
+                            </div>
+                            <div class="d-inline-flex pb-2">
+                                <div class="deletar">
+                                    <a href=""><i class="fa fa-trash-o ml-3" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <a href=""><i class="fa fa-heart-o ml-3" aria-hidden="true"></i></a>
+                                    <span class="ml-1" id="wordCount">0</span>
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -106,6 +120,16 @@
                                     <p class="usuario-registro mt-2 ml-1">@constanza</p>
                                 </div>
                                 <p class="mensagem-registro mt-2 ml-2">Vai no Carregar Mais pra ver o time mais lindo.</p>
+                                <div class="line mt-5 ml-1"></div>
+                            </div>
+                            <div class="d-inline-flex pb-2">
+                                <div class="deletar">
+                                    <a href=""><i class="fa fa-trash-o ml-3" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <a href=""><i class="fa fa-heart-o ml-3" aria-hidden="true"></i></a>
+                                    <span class="ml-1" id="wordCount">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>

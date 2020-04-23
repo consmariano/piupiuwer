@@ -49,23 +49,20 @@ function adicionaPiu(x) {
 }
 //Fim da criação da estrutura dos pius de registro. 
 
-
 //Puxar registros do servidor. 
 botaoCarregarMais.addEventListener("click", function() {
     var xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "https://next.json-generator.com/api/json/get/EkyZfHLU_");
+    xhr.open("GET", "https://next.json-generator.com/api/json/get/EkyZfHLU_"); //puxa o JSON do link
 
-    xhr.addEventListener("load", function() {
+    xhr.addEventListener("load", function() { //enquanto carrega, roda a função. 
         var resposta = xhr.responseText;
 
-        var piusLista = JSON.parse(resposta); //array com usuários, mensagens, nomes e imagens;
-
+        var piusLista = JSON.parse(resposta); //lista de objetos (váriavel com atributos). array com usuários, mensagens, nomes e imagens;
         //adicionar esses perfis na tabela.
-        piusLista.forEach(function(x) {
+        piusLista.reverse().forEach(function(x) {
             adicionaPiu(x);
         });
     });
-
     xhr.send();
 });

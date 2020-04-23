@@ -118,6 +118,14 @@
     border-radius: 5px;
 }
 
+.line{
+    width: 97%;
+    height: 47px;
+    border-bottom: 1px solid #72735C;
+    opacity: 50%;
+    position: absolute;
+}
+
 .caixa-de-registros {
     background-color: #B4B64C;
     position: relative;
