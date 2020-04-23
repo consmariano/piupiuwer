@@ -102,6 +102,12 @@ function enviaPiu(e) {
 }
 //Fim do envio do piupeet.
 
-function deletar(umNovoPiu) {
+//Funcao para deletar pius.
+var botaoTrash = document.querySelector(".deletar"); //procura o botao na div
 
-}
+botaoTrash.addEventListener("click", function() {
+    var deletarPiu = document.querySelector(".caixa-de-pius");
+    deletarPiu.addEventListener("click",function(event){
+        event.target.parentNode.remove();
+    });
+});
